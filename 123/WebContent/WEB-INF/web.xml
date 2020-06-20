@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>123</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>borrow1</servlet-name>
+  <servlet-class>servlet.borrow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>borrow1</servlet-name>
+  <url-pattern>/borrow1</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>start0</servlet-name>
+  <servlet-class>servlet.start</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>start0</servlet-name>
+  <url-pattern>/start0</url-pattern>
+  </servlet-mapping>
+     <servlet>
+     
+  <servlet-name>returnbook1</servlet-name>
+  <servlet-class>servlet.returnbook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>returnbook1</servlet-name>
+  <url-pattern>/returnbook1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>search0</servlet-name>
+  <servlet-class>servlet.Book_Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>search0</servlet-name>
+  <url-pattern>/search0</url-pattern>
+  </servlet-mapping>
+  
+    <!-- Login -->
+    <servlet>
+    <servlet-name>main_login</servlet-name>
+    <servlet-class>servlet.Main_Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main_login</servlet-name>
+    <url-pattern>/z0</url-pattern>
+  </servlet-mapping>
+  <!-- 注册 -->
+      <servlet>
+    <servlet-name>main_register</servlet-name>
+    <servlet-class>servlet.Main_Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main_register</servlet-name>
+    <url-pattern>/z1</url-pattern>
+  </servlet-mapping>
+  <!-- 编辑个人信息 -->
+        <servlet>
+    <servlet-name>main_user_edit</servlet-name>
+    <servlet-class>servlet.Main_user_Edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main_user_edit</servlet-name>
+    <url-pattern>/z2</url-pattern>
+  </servlet-mapping>
+  <!-- 刷新个人信息 -->
+          <servlet>
+    <servlet-name>main_user_edit_refresh</servlet-name>
+    <servlet-class>servlet.Main_user_Edit_Refresh</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main_user_edit_refresh</servlet-name>
+    <url-pattern>/z3</url-pattern>
+  </servlet-mapping>
+    <!-- 转去主界面 -->
+          <servlet>
+    <servlet-name>main_goto_start</servlet-name>
+    <servlet-class>servlet.Goto_start</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main_goto_start</servlet-name>
+    <url-pattern>/z4</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
